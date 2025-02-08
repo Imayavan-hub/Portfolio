@@ -72,7 +72,7 @@ elif page == "Contact":
     st.title("Contact Me")
     
     st.write("Feel free to reach out to me through the details below:")
-    st.markdown("**Email:** hariprasathasaithambi.com")
+    st.markdown("**Email:** hariprasathasaithambi@gmail.com")
     st.markdown("**Phone:** +91-9345930934")
     st.markdown("**LinkedIn:** [linkedin.com/in/imayavan](https://linkedin.com/in/imayavan)")
     st.markdown("**GitHub:** [github.com/imayavan](https://github.com/imayavan)")
