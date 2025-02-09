@@ -37,7 +37,7 @@ page = st.sidebar.selectbox("Take a look at my", page_options, index=page_option
 if page == "Home":
     st.title("Welcome to My Portfolio")
     st.write("**Name:** Hariprasath A")
-    st.image("images/WhatsApp Image 2025-01-26 at 1.45.22 PM.jpeg",width=500)
+    st.image("images/'WhatsApp Image 2025-01-26 at 1.45.22 PM.jpeg'",width=500)
     st.write("As a forward looking individual i posses a strong enthusiasm about teamwork and leadership. I'm eager to eager to explore the advanced fileds of machine learning, cyber security. I look forward to utilize my skills to explore the boundaries of the position I get. I assure you that I'll put my fullest effort to my work and ")
     if st.button("Explore My Work", key="explore"):
         st.session_state["page"] = "Projects"
