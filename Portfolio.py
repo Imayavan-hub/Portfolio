@@ -42,6 +42,9 @@ if page == "Home":
     if st.button("Explore My Work", key="explore"):
         st.session_state["page"] = "Projects"
         st.rerun()
+        
+elif page == "Expertise":
+    st.title("Expertise in")
 
 elif page == "Projects":
     st.title("My Projects")
