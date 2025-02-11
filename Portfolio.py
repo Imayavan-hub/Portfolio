@@ -85,7 +85,7 @@ else:
     
 if page == "Profile":
     st.title("Welcome to My Portfolio")
-    st.write("**Name:** Hariprasath A")    
+    st.write("## **Name:** Hariprasath A")    
     st.image("images/profile.jpeg",width=500)
     st.write("As a forward looking individual i posses a strong enthusiasm about teamwork and leadership. I'm eager to eager to explore the advanced fileds of machine learning, cyber security. I look forward to utilize my skills to explore the boundaries of the position I get. I assure you that I'll put myfullest effort to honor my position and work hard for it.")
     st.write("I am a OS explorer and a kernel engineer and a hard working person on Operating Systems. I can speak upto four languages and has distinguished the stages of the four languages below")
