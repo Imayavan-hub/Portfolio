@@ -1,4 +1,4 @@
-import streamlit as st
+images/5651981.jpgimport streamlit as st
 import pandas as pd
 import random
 import time
@@ -51,10 +51,10 @@ st.markdown(
 
 
 bg_images = {
-    "Profile": "/home/imayavan/Desktop/Portfolio/Portfolio/images/5651981.jpg",
+    "Profile": "images/5651981.jpg",
 }
 
-default_bg = "/home/imayavan/Desktop/Portfolio/Portfolio/images/5651992.png"
+default_bg = "images/5651992.png"
 
 
 def get_base64(image_path):
@@ -85,14 +85,8 @@ else:
     
 if page == "Profile":
     st.title("Welcome to My Portfolio")
-<<<<<<< HEAD
-    st.write("**Name:** Hariprasath A")
+    st.write("**Name:** Hariprasath A")    
     st.image("images/profile.jpeg",width=500)
-    st.write("As a forward looking individual i posses a strong enthusiasm about teamwork and leadership. I'm eager to eager to explore the advanced fileds of machine learning, cyber security. I look forward to utilize my skills to explore the boundaries of the position I get. I assure you that I'll put my fullest effort to my work and ")
-=======
-    st.write("## **Name:** Hariprasath A")
-    
-    st.image("/home/imayavan/Desktop/Portfolio/Portfolio/images/WhatsApp Image 2025-01-26 at 1.45.22 PM.jpeg",width=500)
     st.write("As a forward looking individual i posses a strong enthusiasm about teamwork and leadership. I'm eager to eager to explore the advanced fileds of machine learning, cyber security. I look forward to utilize my skills to explore the boundaries of the position I get. I assure you that I'll put myfullest effort to honor my position and work hard for it.")
     st.write("I am a OS explorer and a kernel engineer and a hard working person on Operating Systems. I can speak upto four languages and has distinguished the stages of the four languages below")
     st.markdown("# Click on the languages listed below")
@@ -125,7 +119,6 @@ if page == "Profile":
         st.table(df)
     
     st.markdown("# Click the below button to view my projects") 
->>>>>>> 24aab4c (add new)
     if st.button("Explore My Work", key="explore"):
         st.session_state["page"] = "Projects"
         st.rerun()
@@ -202,13 +195,13 @@ elif page == "Education":
 elif page == "Expertise":
     st.title("Expertise in")
     image_paths = [
-        "/home/imayavan/Desktop/Portfolio/Portfolio/images/web developement.jpeg",
-        "/home/imayavan/Desktop/Portfolio/Portfolio/images/pngwing.png",
-        "/home/imayavan/Desktop/Portfolio/Portfolio/images/AdobeStock_752175894_Preview.jpeg",
-        "/home/imayavan/Desktop/Portfolio/Portfolio/images/github.png",
-        "/home/imayavan/Desktop/Portfolio/Portfolio/images/python.jpg",
-        "/home/imayavan/Desktop/Portfolio/Portfolio/images/C logo.png",
-        "/home/imayavan/Desktop/Portfolio/Portfolio/images/shell scripting.png"
+        "images/web developement.jpeg",
+        "images/pngwing.png",
+        "images/AdobeStock_752175894_Preview.jpeg",
+        "images/github.png",
+        "images/python.jpg",
+        "images/C logo.png",
+        "images/shell scripting.png"
     ]
 
     text_items = [
