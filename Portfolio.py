@@ -1,4 +1,4 @@
-images/5651981.jpgimport streamlit as st
+import streamlit as st
 import pandas as pd
 import random
 import time
