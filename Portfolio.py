@@ -219,7 +219,7 @@ elif page == "Expertise":
         with col1:
             st.image(img, width=300)
         with col2:
-            st.markdown(f"<p style='font-size:35px; font-weight:normal; line-height:7.0; padding-left:200px'>{text}</p>", unsafe_allow_html=True)
+            st.markdown(f"<p style='font-size:35px; font-weight:normal; line-height:7.0; padding-left:300px'>{text}</p>", unsafe_allow_html=True)
 
 elif page == "Projects":
     st.title("My Projects")
