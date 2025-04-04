@@ -4,16 +4,29 @@ import random
 import time
 import base64
 from streamlit_extras.switch_page_button import switch_page
+from streamlit_option_menu import option_menu
 st.set_page_config(page_title="My Portfolio", page_icon="🎨")
 
 
 if "page" not in st.session_state:
     st.session_state["page"] = "Profile"
-    
-st.sidebar.title("Navigation")
-page_options = ["Profile", "Education", "Expertise", "Skills", "Achievements", "Projects", "Certifications", "Co-curricular", "Contact"]
-page = st.sidebar.selectbox("Take a look at my", page_options, index=page_options.index(st.session_state["page"]))
-st.session_state["page"] = page
+from streamlit_option_menu import option_menu
+
+with st.sidebar:
+    page = option_menu(
+        "Navigation",
+        ["Profile", "Education", "Expertise", "Skills", "Achievements", 
+         "Projects", "Certifications", "Co-curricular", "Contact"],
+        icons=["person", "book", "lightbulb", "star", "award", "briefcase", "bookmark-check", "activity", "phone"],
+        menu_icon="cast",
+        default_index=0,
+        styles={
+            "container": {"padding": "5!important", "background-color": "#f0f2f6"},
+            "icon": {"color": "#6c6c6c", "font-size": "18px"}, 
+            "nav-link": {"font-size": "16px", "text-align": "left", "margin":"0px", "--hover-color": "#d3f2f3"},
+            "nav-link-selected": {"background-color": "#1abc9c", "color": "white"},
+        }
+    )
 
 st.markdown(
     """
@@ -85,16 +98,11 @@ else:
     
 if page == "Profile":
     st.title("Welcome to My Portfolio")
-<<<<<<< HEAD
-    st.write("**Name:** Hariprasath A")
-    st.image("images/profile.jpeg",width=500)
-    st.write("As a forward looking individual i posses a strong enthusiasm about teamwork and leadership. I'm eager to eager to explore the advanced fileds of machine learning, cyber security. I look forward to utilize my skills to explore the boundaries of the position I get. I assure you that I'll put my fullest effort to my work and ")
-=======
     st.write("## **Name:** Hariprasath A")
-    
-    st.image("/home/imayavan/Desktop/Portfolio/Portfolio/images/WhatsApp Image 2025-01-26 at 1.45.22 PM.jpeg",width=500)
+    st.image("/home/imayavan/Desktop/Portfolio/Portfolio/images/profile.jpeg",width=500)
     st.write("As a forward looking individual i posses a strong enthusiasm about teamwork and leadership. I'm eager to eager to explore the advanced fileds of machine learning, cyber security. I look forward to utilize my skills to explore the boundaries of the position I get. I assure you that I'll put myfullest effort to honor my position and work hard for it.")
     st.write("I am a OS explorer and a kernel engineer and a hard working person on Operating Systems. I can speak upto four languages and has distinguished the stages of the four languages below")
+    
     st.markdown("# Click on the languages listed below")
     if st.button("English", key="english"):
         data= [
@@ -125,7 +133,6 @@ if page == "Profile":
         st.table(df)
     
     st.markdown("# Click the below button to view my projects") 
->>>>>>> 24aab4c (add new)
     if st.button("Explore My Work", key="explore"):
         st.session_state["page"] = "Projects"
         st.rerun()
