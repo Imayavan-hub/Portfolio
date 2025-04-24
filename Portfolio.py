@@ -96,10 +96,11 @@ if page == "Profile":
     st.image("/home/imayavan/Downloads/Portfolio/images/profile.jpeg", width=400)
     st.write("## **Name:** Hariprasath A")
     st.markdown("""
-    As a forward-looking individual, I possess strong enthusiasm for teamwork and leadership.
-    I’m eager to explore the advanced fields of **Machine Learning** and **Cyber Security**.  
-    I'm a passionate **OS explorer**, and a budding **kernel engineer** with multilingual capabilities.
-    """)
+    <div style='font-size:20px; line-height:1.6; text-align: justify;'>
+    As a forward looking-individual I posses a strong enthusiasm about leadership and team work. I’m eager to explore the advanced fields of
+    Networking, Machine learning and Cyber security. I look forward to utilize my skills to explore the boundaries of the position i get. I’m eager to      explore the advanced fields of Networking, Machine Learning and Cyber Security. I'm a passionate OS explorer, and a budding kernel engineer with multilingual capabilities. I assure that I’ll put my full effort to my work.
+</div>
+""", unsafe_allow_html=True)
     
     st.markdown("### 🔊 Click on the languages below to see proficiency:")
     languages = {

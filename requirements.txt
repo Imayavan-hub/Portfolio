@@ -1,1 +1,6 @@
+streamlit
+pandas
 streamlit-extras
+streamlit-option-menu
+emoji
+
