@@ -138,26 +138,194 @@ elif page == "Education":
 
 elif page == "Expertise":
     st.title("🧠 Areas of Expertise")
+
+    st.markdown("""
+        <style>
+        .expertise-card {
+            display: flex;
+            align-items: center;
+            background-color: #f7f9fc;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
+        }
+        .expertise-card:hover {
+            transform: scale(1.01);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+        .expertise-card img {
+            width: 170px;
+            border-radius: 12px;
+            margin-right: 35px;
+        }
+        .expertise-title {
+            font-size: 30px;
+            font-weight: 600;
+            color: #222;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
     skills = [
         ("/home/imayavan/Downloads/Portfolio/images/web developement.jpeg", "Web Development"),
         ("/home/imayavan/Downloads/Portfolio/images/pngwing.png", "MongoDB"),
-        ("/home/imayavan/Downloads/Portfolio/images/AdobeStock_752175894_Preview.jpeg", "Prompt Engineering"),
         ("/home/imayavan/Downloads/Portfolio/images/github.png", "Git & GitHub"),
         ("/home/imayavan/Downloads/Portfolio/images/python.jpg", "Python"),
         ("/home/imayavan/Downloads/Portfolio/images/C logo.png", "C Programming"),
         ("/home/imayavan/Downloads/Portfolio/images/shell scripting.png", "Shell Scripting")
     ]
+
     for img, text in skills:
-        col1, col2 = st.columns([1, 3], gap="large")
-        with col1:
-            st.image(img, width=300)
-        with col2:
-            st.markdown(
-                f"<p style='font-size:35px; font-weight:normal; line-height:7.0; padding-left:200px'>{text}</p>",
-                unsafe_allow_html=True)
+        st.markdown(f"""
+            <div class="expertise-card">
+                <img src="data:image/png;base64,{base64.b64encode(open(img, "rb").read()).decode()}">
+                <div class="expertise-title">{text}</div>
+            </div>
+        """, unsafe_allow_html=True)
+
 
 elif page == "Skills":
     st.title("🛠️ SKILLS")
+    
+    st.markdown("""
+        <style>
+        .skill-card {
+            display: flex;
+            align-items: center;
+            background-color: #f7f9fc;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
+        }
+        .skill-card:hover {
+            transform: scale(1.01);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+        .skill-card img {
+            width: 170px;
+            border-radius: 12px;
+            margin-right: 35px;
+        }
+        .skill-title {
+            font-size: 30px;
+            font-weight: 600;
+            color: #222;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
+    skills = [
+    ("/home/imayavan/Downloads/Portfolio/images/AdobeStock_752175894_Preview.jpeg", "Prompt Engineering"),
+    ("/home/imayavan/Downloads/Portfolio/images/PowerPoint.png", "PowerPoint"),
+    ("/home/imayavan/Downloads/Portfolio/images/MS tools.png", "MS Tools"),
+    ("/home/imayavan/Downloads/Portfolio/images/Linux Commands.jpeg", "Linux Commands")
+    ]
+    
+    for img, text in skills:
+        st.markdown(f"""
+            <div class="skill-card">
+                <img src="data:image/png;base64,{base64.b64encode(open(img, "rb").read()).decode()}">
+                <div class="skill-title">{text}</div>
+            </div>
+        """, unsafe_allow_html=True)
+
+elif page == "Achievements":
+    st.title("🎖️ Achievements")
+
+    st.markdown("""
+        <style>
+        .flip-card {
+          background-color: transparent;
+          width: 300px;
+          height: 200px;
+          perspective: 1000px;
+          margin: 20px;
+        }
+
+        .flip-card-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          transition: transform 0.6s;
+          transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+          transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+          border-radius: 15px;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+        }
+
+        .flip-card-front {
+          background-color: #ffffff;
+          color: black;
+        }
+
+        .flip-card-back {
+          background-color: #1f77b4;
+          color: white;
+          transform: rotateY(180deg);
+        }
+
+        .card-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        </style>
+
+        <div class="card-container">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h4>HackathonX Finalist</h4>
+                </div>
+                <div class="flip-card-back">
+                  <p>Top 10 out of 100+ teams — Built Smart Grid ML App</p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h4>Research Publication</h4>
+                </div>
+                <div class="flip-card-back">
+                  <p>IEEE Conference: Quantum SVM for Smart Energy</p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h4>CSK Bot Creator</h4>
+                </div>
+                <div class="flip-card-back">
+                  <p>AI Meme Bot for Chennai Super Kings Fans</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    """, unsafe_allow_html=True)
+
+
+
 elif page == "Projects":
     st.title("🚀 My Projects")
 
@@ -226,7 +394,7 @@ elif page == "Projects":
     }
 
     .project-title {
-        color: #FFA500;
+        color: #ffffff;
         margin-bottom: 10px;
     }
 
