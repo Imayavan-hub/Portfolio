@@ -93,7 +93,7 @@ if encoded_bg:
 
 if page == "Profile":
     st.title("👋 Welcome to My Portfolio")
-    st.image("profile.jpeg", width=400)
+    st.image("images/profile.jpeg", width=400)
     st.write("## **Name:** Hariprasath A")
     st.markdown("""
     <div style='font-size:33px; line-height:1.6; text-align: justify;'>
