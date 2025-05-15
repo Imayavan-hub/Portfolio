@@ -1,4 +1,4 @@
-import streamlit as st
+can you import streamlit as st
 import pandas as pd
 import base64
 import time
@@ -64,7 +64,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 bg_images = {
-    "Profile": "/home/imayavan/Downloads/Portfolio/images/5651981.jpg"
+    "Profile": "/images/5651981.jpg"
 }
 default_bg = "/home/imayavan/Downloads/Portfolio/images/5651992.png"
 
