@@ -64,9 +64,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 bg_images = {
-    "Profile": "/images/5651981.jpg"
+    "Profile": "images/5651981.jpg"
 }
-default_bg = "/home/imayavan/Downloads/Portfolio/images/5651992.png"
+default_bg = "images/5651992.png"
 
 def get_base64(image_path):
     try:
@@ -93,7 +93,7 @@ if encoded_bg:
 
 if page == "Profile":
     st.title("👋 Welcome to My Portfolio")
-    st.image("/home/imayavan/Downloads/Portfolio/images/profile.jpeg", width=400)
+    st.image("profile.jpeg", width=400)
     st.write("## **Name:** Hariprasath A")
     st.markdown("""
     <div style='font-size:33px; line-height:1.6; text-align: justify;'>
@@ -169,12 +169,12 @@ elif page == "Expertise":
     """, unsafe_allow_html=True)
 
     skills = [
-        ("/home/imayavan/Downloads/Portfolio/images/web developement.jpeg", "Web Development"),
-        ("/home/imayavan/Downloads/Portfolio/images/pngwing.png", "MongoDB"),
-        ("/home/imayavan/Downloads/Portfolio/images/github.png", "Git & GitHub"),
-        ("/home/imayavan/Downloads/Portfolio/images/python.jpg", "Python"),
-        ("/home/imayavan/Downloads/Portfolio/images/C logo.png", "C Programming"),
-        ("/home/imayavan/Downloads/Portfolio/images/shell scripting.png", "Shell Scripting")
+        ("images/web developement.jpeg", "Web Development"),
+        ("images/pngwing.png", "MongoDB"),
+        ("images/github.png", "Git & GitHub"),
+        ("images/python.jpg", "Python"),
+        ("images/C logo.png", "C Programming"),
+        ("images/shell scripting.png", "Shell Scripting")
     ]
 
     for img, text in skills:
@@ -219,10 +219,10 @@ elif page == "Skills":
     """, unsafe_allow_html=True)
 
     skills = [
-    ("/home/imayavan/Downloads/Portfolio/images/AdobeStock_752175894_Preview.jpeg", "Prompt Engineering"),
-    ("/home/imayavan/Downloads/Portfolio/images/PowerPoint.png", "PowerPoint"),
-    ("/home/imayavan/Downloads/Portfolio/images/MS tools.png", "MS Tools"),
-    ("/home/imayavan/Downloads/Portfolio/images/Linux Commands.jpeg", "Linux Commands")
+    ("images/AdobeStock_752175894_Preview.jpeg", "Prompt Engineering"),
+    ("images/PowerPoint.png", "PowerPoint"),
+    ("images/MS tools.png", "MS Tools"),
+    ("images/Linux Commands.jpeg", "Linux Commands")
     ]
     
     for img, text in skills:
