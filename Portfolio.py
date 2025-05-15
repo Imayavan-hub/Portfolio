@@ -273,14 +273,14 @@ elif page == "Achievements":
         }
 
         .flip-card-front {
-          background-color: #ffffff;
-          color: black;
+            background-color: #222;
+            color: #f9f871;
         }
 
         .flip-card-back {
-          background-color: #1f77b4;
-          color: white;
-          transform: rotateY(180deg);
+            background-color: #f9c74f;
+            color: #222;
+            transform: rotateY(180deg);
         }
 
         .card-container {
@@ -312,6 +312,17 @@ elif page == "Achievements":
               </div>
             </div>
             <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h4>CSK Bot Creator</h4>
+                </div>
+                <div class="flip-card-back">
+                  <p>AI Meme Bot for Chennai Super Kings Fans</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
                   <h4>CSK Bot Creator</h4>
